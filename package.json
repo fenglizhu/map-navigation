@@ -1,0 +1,23 @@
+{
+  "name": "com.personal.mapnavigation",
+  "version": "1.0.0",
+  "description": "this is a plugin about mapnavigation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fenglizhu/mapnavigation.git"
+  },
+  "keywords": [
+    "cordova",
+    "mapnavigation"
+  ],
+  "author": "zhufengli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fenglizhu/mapnavigation/issues"
+  },
+  "homepage": "https://github.com/fenglizhu/mapnavigation#readme"
+}

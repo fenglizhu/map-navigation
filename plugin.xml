@@ -4,4 +4,17 @@
     <js-module name="mapnavigation" src="www/mapnavigation.js">
         <clobbers target="cordova.plugins.mapnavigation" />
     </js-module>
+    <platform name="android">
+
+        <!-- 导航插件 -->
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="mapnavigation">
+                <param name="android-package" value="com.personal.mapnavigation.MapNavigation" />
+            </feature>
+        </config-file>
+
+        <!-- 项目文件 -->
+        <source-file src="src/android/cameraPlugin.java" target-dir="src/com/personal/mapnavigation" />
+
+    </platform>
 </plugin>
