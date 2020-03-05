@@ -14,7 +14,7 @@
         </config-file>
 
         <!-- 项目文件 -->
-        <source-file src="src/android/cameraPlugin.java" target-dir="src/com/personal/mapnavigation" />
+        <source-file src="src/android/MapNavigation.java" target-dir="src/com/personal/mapnavigation" />
 
     </platform>
 </plugin>
