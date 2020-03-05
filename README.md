@@ -1,2 +1,49 @@
-# mapnavigation
-A map navigation plugin about android.
+# 使用说明
+
+
+插件名：mapnavigation
+
+版本：1.0.0
+
+功能：地图位置导航
+
+```
+mapnavigation：function(){
+	/**
+     * 
+     * @param success			function	成功回调
+     * @param error				function	失败回调
+     * @param mapnavigation		 String		插件名称，固定值
+     * @param coolMethod		 String		插件方法，固定值
+     * @param [0,113.25070,23.13669,"广州医科大学",113.31607,23.13371,"体育西路地铁站",0]
+     						    Array	   插件参数
+     * [0,113.25070,23.13669,"广州医科大学",113.31607,23.13371,"体育西路地铁站",0]:
+     	插件方法参数，具体对应如下：
+     * 参数1：0：高德地图  1：百度地图  2:腾讯地图
+     * 参数2：起点经度
+     * 参数3：起点纬度
+     * 参数4：起点位置名称
+     * 参数5：终点经度
+     * 参数6：终点纬度
+     * 参数7：终点位置名称
+     * 参数8：未安装时是否需要跳转到应用商城安装,默认0   0：不需要 1：需要
+     */
+    cordova.exec(success, error, "mapnavigation", "coolMethod", 
+    [0,113.25070,23.13669,"广州医科大学",113.31607,23.13371,"体育西路地铁站",0])
+}
+
+success:function(result){
+	//暂无参数
+}
+
+error:function(error){
+	//调起百度地图异常/已为你跳到指定商城，请下载对应的软件/未检到百度(高德/腾讯)地图
+    alert(error)
+}
+```
+
+#### 使用反馈
+
+- 作者：朱凤丽
+- 邮箱：13265049537@139.com
+- 时间：2020-03-05 15:00
