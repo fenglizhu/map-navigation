@@ -12,16 +12,19 @@ import org.json.JSONArray;
 import org.json.JSONException;
 
 public class MapNavigation extends CordovaPlugin {
-    //高德、百度包名
+    //高德、百度、腾讯包名
     public static final String GAODE_MAP_PACKAGE = "com.autonavi.minimap";
     public static final String BAIDU_MAP_PACKAGE = "com.baidu.BaiduMap";
     public static final String TENCENT_MAP_PACKAGE = "com.tencent.map";
 
-
+    //打开高德地图导航
     public static final int GAODE = 0;
+    //打开百度地图导航
     public static final int BAIDU = 1;
+    //打开腾讯地图导航
     public static final int TENCENT = 2;
 
+    //未安装状态码
     public static int PACKAGER_INSTALL_CODE = 1;
 
     //导航地图类型
@@ -37,6 +40,7 @@ public class MapNavigation extends CordovaPlugin {
     public static double eLat = 0;
     public static String eAddress = "";
 
+    //未安装状态码
     public static int installCode  = 0;
 
     private CallbackContext callbackContext;
